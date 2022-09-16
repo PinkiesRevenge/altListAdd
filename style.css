@@ -10,7 +10,12 @@ th,td{
 #data{
     margin-bottom: 10px;
 }
-#data input,button{
+#data input{
     padding: 10px;
-    width: 90px;
+    width: 200px;
+}
+#data button{
+    padding: 10px;
+    width: 60px;
+
 }
