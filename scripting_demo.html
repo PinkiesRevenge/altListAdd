@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <script src="./JS/main.js"></script>
+</head>
+<body>
+    <h1>JS Templates</h1>
+    <p id="demo">Click the button to hide this text.</p>
+    <button onclick="hide_row('demo')">Click to hide</button>
+    <button onclick="show_row('demo')">Click to show</button>
+
+    <p>
+        <form>
+            <input id="id" placeholder="Enter ID">
+            <input id="new" placeholder="Enter Product">
+            <button onclick="add_new('ToDo',document.getElementById('id').value,document.getElementById('new').value)">Add</button>
+
+        </form>
+    </p>
+
+    <table id="ToDo">
+        <thead>
+            <tr>
+                <td>Item</td>
+                <td>Action</td>
+            </tr>
+        </thead>
+        <tbody id="products">
+            <tr id="1"><td>apple</td><td>[ <a href="#" onclick="hide_row('1')">Hide</a> ]</td></tr>
+            <tr id="2"><td>orange</td><td><button onclick="hide_row('2')">Delete</button></td></tr>
+            <tr id="3"><td>banana</td><td>[ <a href="#" onclick="hide_row('3')">Hide</a> ]</td></tr>
+            <tr id="4"><td>cherry</td><td>[ <a href="#" onclick="hide_row('4')">Hide</a> ]</td></tr>
+            <tr id="5"><td>guava</td><td>[ <a href="#" onclick="hide_row('5')">Hide</a> ]</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>
