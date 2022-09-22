@@ -5,9 +5,11 @@ let taskInput=document.querySelector('#task')
 let idInput=document.querySelector('#id')
 let commentInput=document.querySelector('#comment')
 
+let id = 0
+
 btnAdd.addEventListener('click',() =>{
     let task = taskInput.value
-    let id = idInput.value
+    id +=1
     let comment = commentInput.value
 
     table.innerHTML +=`
